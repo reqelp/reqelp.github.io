@@ -102,4 +102,7 @@ theme: yun
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: 'git'
+  repo: https://github.com/reqelp/reqelp.github.io.git
+  branch: main
+  message: update hexo static content
