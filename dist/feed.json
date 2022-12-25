@@ -1,0 +1,26 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Requiem's Blog",
+    "home_page_url": "https://reqelp.cn/",
+    "feed_url": "https://reqelp.cn/feed.json",
+    "description": "Requiem's Blog",
+    "icon": "https://reqelp.cn/images/avatar.png",
+    "author": {
+        "name": "Requiem",
+        "url": "https://valaxy.site"
+    },
+    "items": [
+        {
+            "id": "",
+            "content_html": "<h2>Valaxy</h2>\n<p>Next Generation Static Blog Framework.</p>\n<p>Write your first post!</p>\n",
+            "url": "https://reqelp.cn/posts/hello-valaxy",
+            "title": "Hello, Valaxy!",
+            "date_modified": "2022-12-25T00:00:00.000Z",
+            "date_published": "2022-12-25T00:00:00.000Z",
+            "author": {
+                "name": "Requiem",
+                "url": "https://valaxy.site"
+            }
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://reqelp.cn/</id>
+    <title>Requiem's Blog</title>
+    <updated>2022-12-25T18:55:08.333Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <author>
+        <name>Requiem</name>
+        <email>i@valaxy.site</email>
+        <uri>https://valaxy.site</uri>
+    </author>
+    <link rel="alternate" href="https://reqelp.cn/"/>
+    <link rel="self" href="https://reqelp.cn/feed.atom"/>
+    <subtitle>Requiem's Blog</subtitle>
+    <logo>https://reqelp.cn/images/avatar.png</logo>
+    <icon>https://reqelp.cn/favicon.svg</icon>
+    <rights>CC BY-NC-SA 4.0 2022 © Requiem</rights>
+    <entry>
+        <title type="html"><![CDATA[Hello, Valaxy!]]></title>
+        <id>https://reqelp.cn/posts/hello-valaxy</id>
+        <link href="https://reqelp.cn/posts/hello-valaxy"/>
+        <updated>2022-12-25T00:00:00.000Z</updated>
+        <content type="html"><![CDATA[<h2>Valaxy</h2>
+<p>Next Generation Static Blog Framework.</p>
+<p>Write your first post!</p>
+]]></content>
+        <author>
+            <name>Requiem</name>
+            <email>i@valaxy.site</email>
+            <uri>https://valaxy.site</uri>
+        </author>
+        <published>2022-12-25T00:00:00.000Z</published>
+    </entry>
+</feed>
