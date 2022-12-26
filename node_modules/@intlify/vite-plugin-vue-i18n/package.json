@@ -1,0 +1,90 @@
+{
+  "name": "@intlify/vite-plugin-vue-i18n",
+  "description": "Vite plugin for Vue I18n",
+  "version": "6.0.3",
+  "author": {
+    "name": "kazuya kawaguchi",
+    "email": "kawakazu80@gmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/intlify/bundle-tools/issues"
+  },
+  "peerDependencies": {
+    "petite-vue-i18n": "*",
+    "vite": "^2.9.0 || ^3.0.0",
+    "vue-i18n": "*"
+  },
+  "peerDependenciesMeta": {
+    "petite-vue-i18n": {
+      "optional": true
+    },
+    "vite": {
+      "optional": true
+    },
+    "vue-i18n": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@intlify/bundle-utils": "^3.2.1",
+    "@intlify/shared": "next",
+    "@rollup/pluginutils": "^4.2.0",
+    "debug": "^4.3.1",
+    "fast-glob": "^3.2.5",
+    "source-map": "0.6.1"
+  },
+  "devDependencies": {
+    "unbuild": "^0.7.6"
+  },
+  "engines": {
+    "node": ">= 14.6"
+  },
+  "files": [
+    "lib",
+    "index.mjs",
+    "client.d.ts"
+  ],
+  "homepage": "https://github.com/intlify/bundle-tools/blob/main/packages/vite-plugin-vue-i18n/README.md",
+  "keywords": [
+    "i18n",
+    "plugin",
+    "vite",
+    "vitejs",
+    "vue",
+    "vue-i18n"
+  ],
+  "license": "MIT",
+  "main": "lib/index.cjs",
+  "module": "./lib/index.mjs",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./lib/index.mjs",
+      "require": "./lib/index.cjs"
+    },
+    "./lib/*": "./lib/*",
+    "./index.mjs": "./index.mjs",
+    "./package.json": "./package.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/intlify/bundle-tools.git",
+    "directory": "packages/vite-plugin-vue-i18n"
+  },
+  "scripts": {
+    "build": "unbuild",
+    "build:example": "vite build --config ./examples/vite.config.ts --outDir ./examples/dist",
+    "clean": "npm-run-all \"clean:*\"",
+    "clean:lib": "rm -rf ./lib",
+    "clean:example": "rm -rf ./examples/dist",
+    "dev": "vite examples --config ./examples/vite.config.ts",
+    "dev:composition": "vite examples/composition --config ./examples/composition/vite.config.ts",
+    "dev:global": "vite examples/global --config ./examples/global/vite.config.ts",
+    "dev:legacy": "vite examples/legacy --config ./examples/legacy/vite.config.ts",
+    "test": "yarn test:e2e",
+    "test:e2e": "jest --runInBand --config ./jest.e2e.config.js",
+    "watch": "tsc -p . --watch",
+    "changelog": "jiti ../../scripts/changelog.ts",
+    "release": "jiti ../../scripts/release.ts"
+  }
+}

@@ -1,0 +1,3 @@
+export declare type InstalledPackage = 'vue-i18n' | 'petite-vue-i18n';
+export declare function checkInstallPackage(pkg: string, debug: Function): InstalledPackage;
+export declare function checkVueI18nBridgeInstallPackage(debug: Function): boolean;
